@@ -1,0 +1,46 @@
+/**
+ * styles/tokens.css
+ * Design tokens: variables CSS globales.
+ * Fuente única de verdad para colores, tipografía y espaciado.
+ * No contiene selectores de componentes.
+ */
+
+:root {
+  /* ── Paleta de color ── */
+  --navy:        #0f2040;
+  --navy-dark:   #07152a;
+  --navy-mid:    #162d54;
+  --blue:        #1e4d8c;
+  --blue-bright: #3a7fd4;   /* contraste ≥ 4.5:1 sobre --navy-dark */
+  --ice:         #7ecbee;   /* contraste ≥ 4.5:1 sobre --navy-dark */
+  --ice-light:   #b8e0f5;
+  --white:       #f0f6ff;
+  --gray:        #a8bdd4;   /* contraste ≥ 4.5:1 sobre --navy-dark */
+  --gold:        #f5c842;
+  --green:       #3dd68c;
+  --red-badge:   #f87171;
+
+  /* ── Tipografía ── */
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body:    "Barlow", sans-serif;
+  --font-ui:      "Barlow Condensed", sans-serif;
+
+  /* ── Espaciado base ── */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  40px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+
+  /* ── Bordes ── */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* ── Focus (WCAG 2.4.7) ── */
+  --focus-color:  #7ecbee;
+  --focus-width:  3px;
+  --focus-offset: 3px;
+}
