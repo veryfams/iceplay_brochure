@@ -156,7 +156,18 @@ nav {
   transition: border-color 0.2s, transform 0.2s;
 }
 .feature-card:hover { border-color: var(--ice); transform: translateY(-4px); }
-.feature-icon { font-size: 28px; margin-bottom: 16px; display: block; }
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+  color: var(--ice);
+}
+.feature-icon svg {
+  flex-shrink: 0;
+  display: block;
+}
+.feature-card:hover .feature-icon { color: var(--ice-light); }
 .feature-card h3 {
   font-family: var(--font-ui);
   font-size: 18px; font-weight: 700; letter-spacing: 1px;
@@ -363,7 +374,20 @@ nav {
 }
 .sport-pill:hover { border-color: var(--ice); color: var(--ice); transform: scale(1.04); }
 .sport-pill.coming-soon { opacity: 0.55; border-style: dashed; }
-.sport-icon { font-size: 22px; }
+/* Icono en acento: mejor lectura que el mismo blanco que el texto */
+.sport-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--ice);
+}
+.sport-pill:hover .sport-icon { color: var(--ice-light); }
+.sport-icon .sport-fa-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+  display: block;
+}
 
 /* ════════════════════════════════════════
    SPONSORS

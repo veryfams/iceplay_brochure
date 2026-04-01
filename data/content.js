@@ -28,24 +28,26 @@ export const HERO = {
   ctaSecondary:{ label: "Conocer más",  href: "#features" },
 };
 
+/** `icon`: clave en services/featureIcons.js (SVG inline). */
 export const FEATURES = [
-  { icon: "🌐", title: "Página Pública",       desc: "Tu campeonato con URL propia, visible para todos los participantes y seguidores."                    },
-  { icon: "📅", title: "Fixture Automático",   desc: "Generación automática de calendarios y cruces según el formato de tu torneo."                       },
-  { icon: "🏆", title: "Tabla de Posiciones",  desc: "Clasificación en tiempo real, siempre actualizada tras cada resultado."                              },
-  { icon: "⚡", title: "Resultados en Vivo",   desc: "Carga de marcadores en tiempo real para mantener a todos informados al instante."                    },
-  { icon: "👤", title: "Perfiles de Equipos",  desc: "Página individual por equipo y jugador con estadísticas e historial."                                },
-  { icon: "📋", title: "Inscripciones",         desc: "Gestión centralizada de inscripciones y documentación de participantes."                             },
-  { icon: "📊", title: "Estadísticas",          desc: "Métricas básicas del torneo: goles, puntos, promedios, y más."                                       },
-  { icon: "🎨", title: "Personalización",       desc: "Tu logo, tus colores. La plataforma se adapta a la identidad visual de tu campeonato."               },
+  { icon: "globe",     title: "Página Pública",      desc: "Tu campeonato con URL propia, visible para todos los participantes y seguidores."                    },
+  { icon: "calendar",  title: "Fixture Automático",  desc: "Generación automática de calendarios y cruces según el formato de tu torneo."                       },
+  { icon: "trophy",    title: "Tabla de Posiciones", desc: "Clasificación en tiempo real, siempre actualizada tras cada resultado."                              },
+  { icon: "zap",       title: "Resultados en Vivo",  desc: "Carga de marcadores en tiempo real para mantener a todos informados al instante."                    },
+  { icon: "users",     title: "Perfiles de Equipos", desc: "Página individual por equipo y jugador con estadísticas e historial."                                },
+  { icon: "clipboard", title: "Inscripciones",       desc: "Gestión centralizada de inscripciones y documentación de participantes."                             },
+  { icon: "chart",     title: "Estadísticas",        desc: "Métricas básicas del torneo: goles, puntos, promedios, y más."                                       },
+  { icon: "palette",   title: "Personalización",     desc: "Tu logo, tus colores. La plataforma se adapta a la identidad visual de tu campeonato."               },
 ];
 
+/** `icon`: clave en services/sportIcons.js (SVG inline). */
 export const SPORTS = [
-  { icon: "⚽", label: "Fútbol"        },
-  { icon: "🏀", label: "Baloncesto"    },
-  { icon: "🏐", label: "Voleibol"      },
-  { icon: "🏓", label: "Tenis de Mesa" },
-  { icon: "🎾", label: "Ecuavóley"     },
-  { icon: "➕", label: "Más en desarrollo", comingSoon: true },
+  { icon: "soccer",       label: "Fútbol"            },
+  { icon: "basketball",   label: "Baloncesto"        },
+  { icon: "volleyball",   label: "Voleibol"          },
+  { icon: "table-tennis", label: "Tenis de Mesa"     },
+  { icon: "ecuavoley",    label: "Ecuavóley"         },
+  { icon: "more",         label: "Más en desarrollo", comingSoon: true },
 ];
 
 export const SPONSORS = [
@@ -71,7 +73,7 @@ export const CTA = {
 };
 
 export const CONTACT = {
-  email:   "info@iceplay.pro",
+  email:   "iceplay.fropen@gmail.com",
   phone:   "+593 000 000 000",
   website: "https://iceplay.pro",
   idealFor: [

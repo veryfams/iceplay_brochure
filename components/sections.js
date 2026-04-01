@@ -6,6 +6,7 @@
  */
 
 import { escapeHtml } from "../services/renderer.js";
+import { sportIconSvg } from "../services/sportIcons.js";
 
 /* ── Sports ──────────────────────────────────────────────── */
 export function Sports({ sports }) {
@@ -14,7 +15,7 @@ export function Sports({ sports }) {
       const comingClass = s.comingSoon ? " coming-soon" : "";
       return `
       <div class="sport-pill${comingClass}" role="listitem">
-        <span class="sport-icon" aria-hidden="true">${s.icon}</span>
+        <span class="sport-icon" aria-hidden="true">${sportIconSvg(s.icon)}</span>
         ${escapeHtml(s.label)}
       </div>`;
     })

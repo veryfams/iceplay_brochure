@@ -4,6 +4,7 @@
  */
 
 import { escapeHtml } from "../services/renderer.js";
+import { featureIconSvg } from "../services/featureIcons.js";
 
 /**
  * @param {{ features: {icon:string, title:string, desc:string}[] }} props
@@ -14,7 +15,7 @@ export function Features({ features }) {
     .map(
       f => `
       <article class="feature-card" role="listitem">
-        <span class="feature-icon" aria-hidden="true">${f.icon}</span>
+        <span class="feature-icon" aria-hidden="true">${featureIconSvg(f.icon)}</span>
         <h3>${escapeHtml(f.title)}</h3>
         <p>${escapeHtml(f.desc)}</p>
       </article>`
